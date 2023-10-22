@@ -1,0 +1,39 @@
+
+@keyframes lightup
+{
+  0%
+  {
+    width: 0%;
+    box-shadow: 0 40px 90px 75px #f000;
+  }
+  /* 50%
+  {
+    width: 55%;
+    box-shadow: 0 40px 90px 75px #f006;
+  } */
+  100%
+  {
+    width: 50%;
+    box-shadow: 0 40px 80vh 40vh #f006;
+  }
+}
+
+
+.lightwrapper
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.light
+{
+  width: 50%;
+  height: 3px;
+  background-color: #f55d;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation: lightup 1s both 0.3s;
+}
